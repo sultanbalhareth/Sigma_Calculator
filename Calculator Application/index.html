@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Application | Sultan Balhareth</title>
+    <!-- CSS Main File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS Lineicons File -->
+    <link rel="stylesheet" href="lineicons.css">
+    <!-- CSS SweetAlert Animation File -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- JavaScript Main File -->
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="dark-light-modes">
+        <div class="right-side">
+            <div class="dark-mode-icon" title="dark mode">Dark Mode &#127761;</div>
+            <div class="light-mode-icon" title="light-mode">Light Mode&#127765;</div>
+        </div>
+        <div class="left-side">
+            Sigma Calculator Σ
+        </div>
+    </div>
+    <div class="dark-light-mode-mobile">
+        <div class="dark-mode">
+            Dark Mode 🌑
+        </div>
+        <div class="light-mode">
+            Light Mode 🌙
+        </div>
+    </div>
+    <div class="frame">
+        <div class="sub-frame">
+            <header>
+                <h4>Calculator</h4>
+                <div class="result">
+                    <div class="operational-result"></div>
+                    <div class="real-result">0</div>
+                </div>
+            </header>
+            <div class="body">
+                <!-- First Row -->
+                <div title="clear">C</div>
+                <div title="Backspace">&#9003;</div>
+                <div>%</div>
+                <div onclick="operationsFunction('÷')">÷</div>
+                <!-- Second Row -->
+                <div onclick="numbersFunction(4)" title="1">1</div>
+                <div onclick="numbersFunction(5)">2</div>
+                <div onclick="numbersFunction(6)">3</div>
+                <div onclick="operationsFunction('×')">×</div>
+                <!-- Third Row -->
+                <div onclick="numbersFunction(8)">4</div>
+                <div onclick="numbersFunction(9)">5</div>
+                <div onclick="numbersFunction(10)">6</div>
+                <div onclick="operationsFunction('+')">+</div>
+                <!-- Fourth Row -->
+                <div onclick="numbersFunction(12)">7</div>
+                <div onclick="numbersFunction(13)">8</div>
+                <div onclick="numbersFunction(14)">9</div>
+                <div onclick="operationsFunction('-')">-</div>
+                <!-- Fivth Row -->
+                <div>.</div>
+                <div onclick="numbersFunction(17)">0</div>
+                <div onclick="numbersFunction(0)">❤️</div>
+                <div>=</div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Made With Love 🤍 by <span>Sultan Balhareth </span></p>
+        <div>
+            <li><a href="https://www.linkedin.com/in/sultan-balhareth-b9a841199/" target="_blank"> <i class="lni lni-linkedin-original"></i></a></li>
+            <li> <a href="https://github.com/sultanbalhareth" target="_blank"> <i
+                class="lni lni-github-original"></i> </a> </li>
+            </div>
+    </footer>
+    <script src="js/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
